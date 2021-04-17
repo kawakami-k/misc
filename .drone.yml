@@ -26,7 +26,7 @@ steps:
   image: ubuntu:16.04
   commands:
   - cat /proc/cpuinfo
-  - cd /usr/include
+  - cd /
   - find . -name "auxv.h"
 #  - cat /usr/include/sys/auxv.h
 #  - apt-get update && apt-get install -y git build-essential cmake scons
