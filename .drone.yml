@@ -26,10 +26,14 @@ steps:
   image: ubuntu:16.04
   commands:
   - cat /proc/cpuinfo
-  - apt-get update && apt-get install -y git build-essential cmake scons
-  - cd aarch64/get_hw_capability
-  - gcc -o get_hw_capability get_hw_capability.c
-  - ./get_hw_capability
+  - cat /usr/include/sys/auxv.h
+#  - apt-get update && apt-get install -y git build-essential cmake scons
+#  - cd aarch64/get_hw_capability
+#  - gcc -o get_hw_capability get_hw_capability.c
+#  - ./get_hw_capability
+
+
+
 
 ---
 kind: pipeline
