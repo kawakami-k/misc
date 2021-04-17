@@ -31,6 +31,7 @@ steps:
 #  - find . -name "auxv.h"
   - cat /usr/include/aarch64-linux-gnu/sys/auxv.h
   - cat /usr/include/aarch64-linux-gnu/bits/auxv.h
+  - cat /usr/include/aarch64-linux-gnu/bits/hwcap.h
 #  - cd aarch64/get_hw_capability
 #  - gcc -o get_hw_capability get_hw_capability.c
 #  - ./get_hw_capability
