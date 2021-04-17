@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <sys/auxv.h>
 
+#ifndef HWCAP_FP
+#include <sys/asm/hwcap.h>
+#endif
+
 #define GETAUXVAL(a) printf(#a "=%016lx\n", getauxval(a))
 #define GETFEATURE(a) if(hwcaps & a) \
     printf(#a ":true\n"); \
